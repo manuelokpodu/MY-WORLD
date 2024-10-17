@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --bg-elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+.light-mode {
+  --text-color: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --bg-color: hsl(0, 0%, 98%);
+  --bg-elements-color: hsl(0, 0%, 100%);
+}
+
+.bg-elements {
+  background-color: var(--bg-elements-color);
+}
+
+.bg-main-color {
+  background-color: var(--bg-color);
+}
+
+.custom-text-white {
+  color: var(--text-color);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+input {
+  padding-left: 85px;
+}
+
+.search-icon {
+  top: 26%;
+  left: -5%;
+}
+
+.all-countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.all-countries img {
+  aspect-ratio: 16/9;
+}
+
+.each-country img {
+  aspect-ratio: 16/9;
+}
+
+.back-btn {
+  /* width: 50%; */
+  max-width: 125px;
+  cursor: pointer;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-options {
+  list-style: none;
+  text-align: left;
+  width: 210px;
+}
+
+.dropdown-options li {
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-options li:hover {
+  background-color: var(--bg-color);
+}
+
+.dropdown-display {
+  width: 115px;
+  text-align: start;
+}
+
+.where {
+  font-size: 30px;
+}
+
+nav {
+  padding: 50px;
+}
+
+.search-con {
+  padding: 50px 30px;
+
+}
+
+@media (max-width: 1115px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .each-country img {
+    /* width: 100px; */
+    aspect-ratio: 16/9;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .inner-each img {
+  }
+}
+
+@media (max-width: 500px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    padding: 25px 15px;
+  }
+
+  .where {
+    font-size: 2px;
+    margin-top: 5px;
+  }
+
+  .light-dark {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .inner-each {
+    flex-direction: column;
+  }
+
+  .inner-content {
+    margin-top: 50px;
+  }
+
+  .borderr {
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .search-con {
+    padding: 20px 0px 0px 0px;
+    flex-direction: column;
+    gap: 30px;
+
+    align-items: start;
+  }
+
+  .first-con {
+    width: 340px;
+  }
+}
